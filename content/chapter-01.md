@@ -24,11 +24,11 @@ Summary: This is the summary of the first post
 - How to place the repository containing code to a remote machine
 - How to use git help to understand git.
 
+### Git commands used
 
-### Git commands used 
 > Note: The structure of git command  <command> [<arg>] 
 
-```git 
+```
     1. > git --version
     2. > git config <variable>
     3. > git config --global user.name "your name"
@@ -43,12 +43,9 @@ Summary: This is the summary of the first post
     12.> git help -g
 ```
 
-
 > This guide is no way a comprehensive guide to **git** but a lay man endeavour to understand **git** and help to many others who goggles for term like fork,branch, push ,pull and so on to figure out what the heck is all about.  This guide was written last year. Since then the version of git may have changed!
 
-
-
-#### What is Git?d
+#### What is Git?
 
 It is a free and open source computer software developed by [*Linus Torvalds*](https://en.wikipedia.org/wiki/Linus_Torvalds) for the purpose built  version control system [**VCS**](https://en.wikipedia.org/wiki/Version_control).
 
@@ -88,12 +85,17 @@ Once git is installed you need to check if it is installed correctly or not.
 
 ### Check The Installation
 
-        K:>git --version
-        git version 2.6.2.windows.1
+```shell
+    K:>git --version
+    git version 2.6.2.windows.1
+```
 
 The **git** version command is best way to find out if it is installed or not. Typing only `>git` will result in displaying the usage of **git**. If you can not see the above and see the  the message similar to this instead
 
-        K:>git is not recognized as an internal or external command,operable program or batch file.
+```shell
+K:> git
+git is not recognized as an internal or external command,operable program or batch file.
+```
 
 It means **git** is not installed on your local computer , you need to try again and if needs goggle it to find the solution.
 
@@ -101,29 +103,27 @@ It means **git** is not installed on your local computer , you need to try again
 
 You have already used one command of **git** that is `git --version` now type `>git` only and see you get the list of commands that you can use.The system tells you how to use **git** command for what purpose as shown in figure below.
 
-![installing-windows](/images/git/command-prompt-03.png)
-
-
+![installing-windows](/images/git/command-prompt-03.png
 
 Before starting to use git it needs to be configured so **git** knows who you are and what is your contact details and what is your options so that it can provide its services to you.
 
-###  How to Configure git
+### How to Configure git
 
 **git** configuration details are kept in a config file called **.gitconfig**. In windows environment it is present in user's profile folder which is usually set under this folder  `C:\Users\Yourlogin name\ ` . This is also a  home directory where you can find *.gitconfig* file . An easy way to change the values of this file to open in any editor and do some changes. Another way to edit this file is to use the command prompt. By default some values are set by the **git**  installation. To see what values are set by default use`>git config --list`. Note to open a global config file from a command prompt in a default editor use `>git config --global -e`. This command will open your default editor or the editor you have set to be used in the config file. 
 
 ![Configuring-git](/images/git/config-git-01.png)
 
-
-
 <!-- The above details were set by **git** installation. They may not make some sense at this stage but later on gradually you will understand what  these terms are about. Now set your personal details with git. -->
 
 ### Setting your id
+
 #### Configuring ***.gitconfig*** file from command prompt. 
 
 Set your user name and user email by setting the value in *user.name* and *user.email* variables as follows
 
-           >git config --global user.name "your name"
-           >git config --global user.email "your email"
+```
+>git config --global user.name "your name"
+>git config --global user.email "your email"
 
 Once your identity is set run the `config --list` command again to see the setting in config file . You should be able to see your user name and email set . In case if you have made any mistake open `.gitconfig`file in any editor and correct your mistake. To see if the values are set properly get the listing again. If you ever need to find out an individual variable value **git** allows you this as well by using this format `>git config < variable >`  to find out which email is set with git use `git config user.email` and it will output the result. To see the help associated with confgi commnad use `>git config` as done below.
 
@@ -187,7 +187,7 @@ Finding what is set by configuration file first use `>git config -l` , this comm
     ______________________________________________ |
     user.name=Abdul Sayyed                         |
     user.email=s.a.ghafoor@outlook.com             |
-    filter.lfs.clean=git-lfs clean %f              | <-- global config settings                         |
+    filter.lfs.clean=git-lfs clean %f              | <-- global config settings
     filter.lfs.smudge=git-lfs smudge %f            |
     filter.lfs.required=true                       |
     ______________________________________________ |
@@ -268,11 +268,12 @@ Though these days there are number of desktop programs which help you perform da
 
 - Open local repository config file using `>git config --local -e`
 
-#### Where are they saved?
+#### Where are they saved ?
 
 One of the file named `gitconfig` is saved under `C:/User/UserName/` where it can be modified directly.
 
-[//]: # ( above - t 
+[//]: # ( above - t )
+
 ### What is the line ending
 
 There is one important thing to note when working with windowed environment and this is the way windows handle line endings of any text file. In order to understand the problem one must understand that every time   "Enter" Key is hit  the system adds an invisible line-ending character to mark that this an "Enter Key" a line ending key and it is not a part of the text being written. This "Enter " key is also known as carriage return "CR" Unix and its variants systems including OS X use `LF` character while Windows uses `CRLF` to mark end of line. This end of line invisible character is also stored when every time  a file is stored along with the contents of the file and read back when reading the file.
@@ -376,7 +377,7 @@ As we have tried the very first command option listed you can go ahead and try t
 
 `Git` is developed in linux and very easy to install but different from windows installation as they both system differs greatly. To install `git` on linux just use `apt-get` package or any other package installer according to your distro.
 
-```git
+```shell
 $ apt-get update or sudo apt-get update or sudo apt-get install git-core
 // you need the following line to install git, you can do whatever way you like
 $ apt-get install git-core 
@@ -388,7 +389,7 @@ git will be installed hopefully in `/usr/bin/` directory, if needs to know where
 
 Unlike windows linux does not require many varaibles to be set up, if you try to take the listing of git, you might end up with having no listing at all. As it is not needed by default. The only entries that are present and expected to be changed by you is the user name and email address which pops up time and time again when working so it is best to have those values stored in `.gitconfig` file.
 
-```git
+```shell
 $ git config --list
 $ 
 $ git config --global --list

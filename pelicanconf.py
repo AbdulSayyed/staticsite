@@ -10,7 +10,7 @@ PATH = 'content'
 
 TIMEZONE = 'Europe/London'
 
-DEFAULT_LANG = 'English'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -31,5 +31,17 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 5
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+#pelicanconf.py
+
+PLUGIN_PATHS = ['pelican-plugins']
+
+THEME = 'pelican-themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'flatly'
+
+# PLUGIN_PATHS = ['pelican-plugins']
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+PLUGINS = [
+    'i18n_subsites']
+
+I18N_TEMPLATES_LANG = 'en'
+

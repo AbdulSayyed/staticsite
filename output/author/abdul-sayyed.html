@@ -1,410 +1,144 @@
 <!DOCTYPE html>
-<html lang="english">
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-        <meta charset="utf-8" />
-        <title>LearningPython - Abdul Sayyed</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+    <title>Articles by Abdul Sayyed - LearningPython</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+        <meta name="author" content="Abdul Sayyed" />
+
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="LearningPython" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="LearningPython"/>
+        <meta property="og:url" content=""/>
+        <meta property="og:description" content="LearningPython"/>
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+
 </head>
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">LearningPython</a></h1>
-                <nav><ul>
-                    <li><a href="/category/this-site.html">This site</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+LearningPython            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="/category/this-site.html">This site</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/first-post.html">Installing git on Windows</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2020-04-05T12:40:00+01:00">
-                Published: Sun 05 April 2020
-        </abbr>
-		<br />
-        <abbr class="modified" title="2020-04-05T12:40:00+01:00">
-                Updated: Sun 05 April 2020
-        </abbr>
+<!-- Banner -->
+<!-- End Banner -->
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/abdul-sayyed.html">Abdul Sayyed</a>
-        </address>
-<p>In <a href="/category/this-site.html">This site</a>.</p>
-<p>tags: <a href="/tag/python.html">python</a> <a href="/tag/markdown.html">markdown</a> <a href="/tag/blog.html">blog</a> </p>
-</footer><!-- /.post-info --><blockquote>
-<p>By the end of this chapter you should be able to learn the following:</p>
-</blockquote>
-<ul>
-<li>The concept behind the <strong>git</strong> program.</li>
-<li>Why was it written initially?</li>
-<li>What does it mean to say a program is a git client?</li>
-<li>How to install <strong>git</strong> software on Windows?</li>
-<li>What is <strong>.gitconfig</strong> file and how to manipulate it?</li>
-<li>Why three different config files, system-config, local-config and global-config</li>
-<li>Where are they saved in your system</li>
-<li>How to set your identity with config file</li>
-<li>How and why line ending important</li>
-<li>What is GitHub and GitHub client</li>
-<li>How to place the repository containing code to a remote machine</li>
-<li>How to use git help to understand git.</li>
-</ul>
-<h3>Git commands used</h3>
-<blockquote>
-<p>Note: The structure of git command  <command> [<arg>] </p>
-</blockquote>
-<div class="highlight"><pre><span></span><code><span class="err">    1. &gt; git --version</span>
-<span class="err">    2. &gt; git config &lt;variable&gt;</span>
-<span class="err">    3. &gt; git config --global user.name &quot;your name&quot;</span>
-<span class="err">    4. &gt; git config --global user.email &quot;your email&quot;</span>
-<span class="err">    5. &gt; git config --list</span>
-<span class="err">    6. &gt; git config --global -l</span>
-<span class="err">    7. &gt; git config --local -l</span>
-<span class="err">    8. &gt; git config --global add &lt; key &gt;</span>
-<span class="err">    9. &gt; git config --global user.dob &quot;1977/09/03&quot;</span>
-<span class="err">    10.&gt; git --global --replace-all user.dob &quot;new values&quot;</span>
-<span class="err">    11.&gt; git config --local -e</span>
-<span class="err">    12.&gt; git help -g</span>
-</code></pre></div>
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+            <article>
+                <h2><a href="/first-post.html">Installing git on Windows</a></h2>
+                <div class="summary"><p>This is the summary of the first post</p>
+                    <a class="btn btn-default btn-xs" href="/first-post.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
 
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
 
-<blockquote>
-<p>This guide is no way a comprehensive guide to <strong>git</strong> but a lay man endeavour to understand <strong>git</strong> and help to many others who goggles for term like fork,branch, push ,pull and so on to figure out what the heck is all about.  This guide was written last year. Since then the version of git may have changed!</p>
-</blockquote>
-<h4>What is Git?d</h4>
-<p>It is a free and open source computer software developed by <a href="https://en.wikipedia.org/wiki/Linus_Torvalds"><em>Linus Torvalds</em></a> for the purpose built  version control system <a href="https://en.wikipedia.org/wiki/Version_control"><strong>VCS</strong></a>.</p>
-<p>It is a software  developed for people who want keep track of their work from beginning to end ( having different versions of their work ) and for those who want to work together as a team on any topic of common interest sitting remotely anywhere in the world with the facility of having a program which allows them to collaborate with each other painlessly. </p>
-<p>In other words  a project or any piece of work before it comes to its final stage for publication goes through many phases  (and these phases may be understood by their versions) before it is ready to come out. To keep all those records in a systematic way requires a frame work and <strong>git</strong> provides that frame work to you on your system whether you like to work alone or with others. It is completely acceptable and possible to work alone and use <strong>git</strong> but for this purpose you may have other options which may be much easier to learn and use.</p>
-<p><strong>Git</strong> is not only a <strong>VCS</strong> but a <a href="https://en.wikipedia.org/wiki/Distributed_version_control"><strong>DVCS</strong></a> distributed / decentralized version control system. The main difference b/w a centralized VCS and Distributed VCS is that a DCVS is not dependent upon the centralized remote server  but it can work itself alone because the user machine has a DVCS installed on its computer so it can keep working even if the remote server is down. Before we learn how to install git on local computer bear in mind if you search/google for " What does git stands for ? " the answer is, it stands for so many things of not your interest. In software technologies many programs names are not supposed to be acronym of anything. Thus git does not stand for anything which you may be looking for.  </p>
-<h3>How to Install Git on Windows</h3>
-<p>Visit the site <a href="https://www.git-scm.com">git-scm.com</a> and click on download link select windows option if you are on windows,select the right version for your platform , look for what is available there. An exe file similar to <em>Git-2.6.2-64-bit.exe</em> will be downloaded on your desktop. Double click to install it on your computer click <code>Next &gt;</code></p>
-<p><img alt="installing-windows" src="/images/git/installing-windows-01.png"></p>
-<p>Next Dialogue box will give you different options to install. Since you are installing it on Windows click the options shown on the image.It is handy to have an Explorer integration option so that you can use with the right click of your mouse selecting any folder , click <code>Next</code> . </p>
-<p><img alt="installing-windows" src="/images/git/installing-windows-02.png"></p>
-<p>in this dialogue box choose the one which says Git from windows command prompt</p>
-<p><img alt="installing-windows" src="/images/git/installing-windows-03.png"></p>
-<p>the next dialogue box asks you how git should treat line endings check the one which says Windows-style</p>
-<p><img alt="installing-windows" src="/images/git/installing-windows-04.png"></p>
-<p>Remaining dialogue box accept the default options as they have to do with GitBash which is used on Mac computer.</p>
-<p><img alt="installing-windows" src="/images/git/installing-windows-05.png"></p>
-<p>Once git is installed you need to check if it is installed correctly or not.</p>
-<h3>Check The Installation</h3>
-<div class="highlight"><pre><span></span><code><span class="err">    K:&gt;git --version</span>
-<span class="err">    git version 2.6.2.windows.1</span>
-</code></pre></div>
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="#"><i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg"></i> You can add links in your config file</a></li>
+    <li class="list-group-item"><a href="#"><i class="fa fa-another-social-link-square fa-lg"></i> Another social link</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
 
+<!-- Sidebar/Links -->
+<li class="list-group-item">
+  <h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+  <ul class="list-group" id="links">
+    <li class="list-group-item">
+      <a href="http://getpelican.com/" target="_blank">Pelican</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://python.org/" target="_blank">Python.org</a>
+    </li>
+    <li class="list-group-item">
+      <a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a>
+    </li>
+    <li class="list-group-item">
+      <a href="#" target="_blank">You can modify those links in your config file</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Links -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
 
-<p>The <strong>git</strong> version command is best way to find out if it is installed or not. Typing only <code>&gt;git</code> will result in displaying the usage of <strong>git</strong>. If you can not see the above and see the  the message similar to this instead</p>
-<div class="highlight"><pre><span></span><code><span class="err">    K:&gt;git is not recognized as an internal or external command,operable program or batch file.</span>
-</code></pre></div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2020 Abdul Sayyed
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
 
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
 
-<p>It means <strong>git</strong> is not installed on your local computer , you need to try again and if needs goggle it to find the solution.</p>
-<h3>Start Using git</h3>
-<p>You have already used one command of <strong>git</strong> that is <code>git --version</code> now type <code>&gt;git</code> only and see you get the list of commands that you can use.The system tells you how to use <strong>git</strong> command for what purpose as shown in figure below.</p>
-<p><img alt="installing-windows" src="/images/git/command-prompt-03.png"></p>
-<p>Before starting to use git it needs to be configured so <strong>git</strong> knows who you are and what is your contact details and what is your options so that it can provide its services to you.</p>
-<h3>How to Configure git</h3>
-<p><strong>git</strong> configuration details are kept in a config file called <strong>.gitconfig</strong>. In windows environment it is present in user's profile folder which is usually set under this folder  <code>C:\Users\Yourlogin name\</code> . This is also a  home directory where you can find <em>.gitconfig</em> file . An easy way to change the values of this file to open in any editor and do some changes. Another way to edit this file is to use the command prompt. By default some values are set by the <strong>git</strong>  installation. To see what values are set by default use<code>&gt;git config --list</code>. Note to open a global config file from a command prompt in a default editor use <code>&gt;git config --global -e</code>. This command will open your default editor or the editor you have set to be used in the config file. </p>
-<p><img alt="Configuring-git" src="/images/git/config-git-01.png"></p>
-<!-- The above details were set by **git** installation. They may not make some sense at this stage but later on gradually you will understand what  these terms are about. Now set your personal details with git. -->
-
-<h3>Setting your id</h3>
-<h4>Configuring <strong><em>.gitconfig</em></strong> file from command prompt.</h4>
-<p>Set your user name and user email by setting the value in <em>user.name</em> and <em>user.email</em> variables as follows</p>
-<div class="highlight"><pre><span></span><code><span class="err">       &gt;git config --global user.name &quot;your name&quot;</span>
-<span class="err">       &gt;git config --global user.email &quot;your email&quot;</span>
-</code></pre></div>
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
 
 
-<p>Once your identity is set run the <code>config --list</code> command again to see the setting in config file . You should be able to see your user name and email set . In case if you have made any mistake open <code>.gitconfig</code>file in any editor and correct your mistake. To see if the values are set properly get the listing again. If you ever need to find out an individual variable value <strong>git</strong> allows you this as well by using this format <code>&gt;git config &lt; variable &gt;</code>  to find out which email is set with git use <code>git config user.email</code> and it will output the result. To see the help associated with confgi commnad use <code>&gt;git config</code> as done below.</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="nl">K</span><span class="p">:</span><span class="err">\</span><span class="o">&gt;</span><span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"></span>
-<span class="k">usage</span><span class="err">:</span><span class="w"> </span><span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">[</span><span class="n">&lt;options&gt;</span><span class="o">]</span><span class="w"></span>
-<span class="n">Config</span><span class="w"> </span><span class="k">file</span><span class="w"> </span><span class="n">location</span><span class="w"></span>
-<span class="w">    </span><span class="c1">--global              use global config file</span>
-<span class="w">    </span><span class="c1">--system              use system config file</span>
-<span class="w">    </span><span class="c1">--local               use repository config file</span>
-<span class="w">    </span><span class="o">-</span><span class="n">f</span><span class="p">,</span><span class="w"> </span><span class="c1">--file &lt;file&gt;     use given config file</span>
-<span class="w">    </span><span class="c1">--blob &lt;blob-id&gt;      read config from given blob object</span>
-<span class="k">Action</span><span class="w"></span>
-<span class="w">    </span><span class="c1">--get                 get value: name [value-regex]</span>
-<span class="w">    </span><span class="c1">--get-all             get all values: key [value-regex]</span>
-<span class="w">    </span><span class="c1">--get-regexp          get values for regexp: name-regex [value-regex]</span>
-<span class="w">    </span><span class="c1">--get-urlmatch        get value specific for the URL: section[.var] URL</span>
-<span class="w">    </span><span class="c1">--replace-all         replace all matching variables: name value [value_regex]</span>
-<span class="w">    </span><span class="c1">--add                 add a new variable: name value</span>
-<span class="w">    </span><span class="c1">--unset               remove a variable: name [value-regex]</span>
-<span class="w">    </span><span class="c1">--unset-all           remove all matches: name [value-regex]</span>
-<span class="w">    </span><span class="c1">--rename-section      rename section: old-name new-name</span>
-<span class="w">    </span><span class="c1">--remove-section      remove a section: name</span>
-<span class="w">    </span><span class="o">-</span><span class="n">l</span><span class="p">,</span><span class="w"> </span><span class="c1">--list            list all</span>
-<span class="w">    </span><span class="o">-</span><span class="n">e</span><span class="p">,</span><span class="w"> </span><span class="c1">--edit            open an editor</span>
-<span class="w">    </span><span class="c1">--get-color           find the color configured: slot [default]</span>
-<span class="w">    </span><span class="c1">--get-colorbool       find the color setting: slot [stdout-is-tty]</span>
-<span class="n">Type</span><span class="w"></span>
-<span class="w">    </span><span class="c1">--bool                value is &quot;true&quot; or &quot;false&quot;</span>
-<span class="w">    </span><span class="c1">--int                 value is decimal number</span>
-<span class="w">    </span><span class="c1">--bool-or-int         value is --bool or --int</span>
-<span class="w">    </span><span class="c1">--path                value is a path (file or directory name)</span>
-<span class="n">Other</span><span class="w"></span>
-<span class="w">    </span><span class="o">-</span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="c1">--null            terminate values with NUL byte</span>
-<span class="w">    </span><span class="c1">--name-only           show variable names only</span>
-<span class="w">    </span><span class="c1">--includes            respect include directives on lookup</span>
-</code></pre></div>
 
-
-<p>The <code>--global</code> option was used when setting user.name and user.password . These values are used when you make commits and must be set. The <code>--global</code> option will make sure that no matter where you are the values set by this option will be used automatically. If you are working on a different project where a different user name or an email is used you can set the values without the <code>--gloabl</code> option and those values will be used for that purpose only.</p>
-<h3>Why more than one <strong><em>.gitconfig</em></strong> file</h3>
-<p>When <strong>git</strong> is installed it installs these files on different places to use for different purposes. <strong>git</strong> follows this concept that local settings  are more specific  than global setting and global settings are more specific than system settings. Thus when reading the values they are read first from least specific place that is from the system then from the global setting and from the local repository setting. To read from  global config file a  <code>--gloabl</code> option is used and so on as shown in following code.</p>
-<h3>Reading from <strong>.gitconfig</strong> files</h3>
-<p>Finding what is set by configuration file first use <code>&gt;git config -l</code> , this command will read from all configuration files and result a list of all values set. Note if you are not in local repository it will only read values from system and global config files The following listing is taken from within local repository thus it includes values from <code>--system , --global</code> config files and from local repository config files.</p>
-<div class="highlight"><pre><span></span><code>    <span class="nx">K</span><span class="o">:</span><span class="err">\</span><span class="nx">projects</span><span class="err">\</span><span class="nx">c</span><span class="o">-</span><span class="nx">dir</span><span class="o">-</span><span class="nx">record</span><span class="o">&gt;</span><span class="nx">git</span> <span class="nx">config</span> <span class="o">-</span><span class="nx">l</span>
-    <span class="nx">core</span><span class="p">.</span><span class="nx">symlinks</span><span class="o">=</span><span class="kc">false</span>                            <span class="o">|</span>
-    <span class="nx">core</span><span class="p">.</span><span class="nx">autocrlf</span><span class="o">=</span><span class="kc">true</span>                             <span class="o">|</span>
-    <span class="nx">core</span><span class="p">.</span><span class="nx">fscache</span><span class="o">=</span><span class="kc">true</span>                              <span class="o">|</span>
-    <span class="nx">color</span><span class="p">.</span><span class="nx">diff</span><span class="o">=</span><span class="nx">auto</span>                                <span class="o">|</span>
-    <span class="nx">color</span><span class="p">.</span><span class="nx">status</span><span class="o">=</span><span class="nx">auto</span>                              <span class="o">|</span>
-    <span class="nx">color</span><span class="p">.</span><span class="nx">branch</span><span class="o">=</span><span class="nx">auto</span>                              <span class="o">|&lt;--</span> <span class="nx">system</span> <span class="nx">config</span> <span class="nx">settings</span>
-    <span class="nx">color</span><span class="p">.</span><span class="nx">interactive</span><span class="o">=</span> <span class="kc">true</span>                        <span class="o">|</span>
-    <span class="nx">help</span><span class="p">.</span><span class="nx">format</span><span class="o">=</span><span class="nx">html</span>                               <span class="o">|</span>
-    <span class="nx">http</span><span class="p">.</span><span class="nx">sslcainfo</span><span class="o">=</span><span class="nx">C</span><span class="o">:</span><span class="err">/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt |</span>
-    <span class="nx">diff</span><span class="p">.</span><span class="nx">astextplain</span><span class="p">.</span><span class="nx">textconv</span><span class="o">=</span><span class="nx">astextplain</span>          <span class="o">|</span>
-    <span class="nx">rebase</span><span class="p">.</span><span class="nx">autosquash</span><span class="o">=</span><span class="kc">true</span>                         <span class="o">|</span>
-    <span class="nx">______________________________________________</span> <span class="o">|</span>
-    <span class="nx">user</span><span class="p">.</span><span class="nx">name</span><span class="o">=</span><span class="nx">Abdul</span> <span class="nx">Sayyed</span>                         <span class="o">|</span>
-    <span class="nx">user</span><span class="p">.</span><span class="nx">email</span><span class="o">=</span><span class="nx">s</span><span class="p">.</span><span class="nx">a</span><span class="p">.</span><span class="nx">ghafoor</span><span class="err">@</span><span class="nx">outlook</span><span class="p">.</span><span class="nx">com</span>             <span class="o">|</span>
-    <span class="nx">filter</span><span class="p">.</span><span class="nx">lfs</span><span class="p">.</span><span class="nx">clean</span><span class="o">=</span><span class="nx">git</span><span class="o">-</span><span class="nx">lfs</span> <span class="nx">clean</span> <span class="o">%</span><span class="nx">f</span>              <span class="o">|</span> <span class="o">&lt;--</span> <span class="nx">global</span> <span class="nx">config</span> <span class="nx">settings</span>                         <span class="o">|</span>
-    <span class="nx">filter</span><span class="p">.</span><span class="nx">lfs</span><span class="p">.</span><span class="nx">smudge</span><span class="o">=</span><span class="nx">git</span><span class="o">-</span><span class="nx">lfs</span> <span class="nx">smudge</span> <span class="o">%</span><span class="nx">f</span>            <span class="o">|</span>
-    <span class="nx">filter</span><span class="p">.</span><span class="nx">lfs</span><span class="p">.</span><span class="nx">required</span><span class="o">=</span><span class="kc">true</span>                       <span class="o">|</span>
-    <span class="nx">______________________________________________</span> <span class="o">|</span>
-    <span class="nx">core</span><span class="p">.</span><span class="nx">repositoryformatversion</span><span class="o">=</span><span class="mi">0</span>                 <span class="o">|</span>
-    <span class="nx">core</span><span class="p">.</span><span class="nx">filemode</span><span class="o">=</span><span class="kc">false</span>                            <span class="o">|</span>
-    <span class="nx">core</span><span class="p">.</span><span class="nx">bare</span><span class="o">=</span><span class="kc">false</span>                                <span class="o">|</span>
-    <span class="nx">core</span><span class="p">.</span><span class="nx">logallrefupdates</span><span class="o">=</span><span class="kc">true</span>                     <span class="o">|</span>
-    <span class="nx">core</span><span class="p">.</span><span class="nx">symlinks</span><span class="o">=</span><span class="kc">false</span>                            <span class="o">|</span> <span class="o">&lt;--</span><span class="nx">local</span> <span class="nx">repository</span> <span class="nx">settings</span>
-    <span class="nx">core</span><span class="p">.</span><span class="nx">ignorecase</span><span class="o">=</span><span class="kc">true</span>                           <span class="o">|</span>
-    <span class="nx">core</span><span class="p">.</span><span class="nx">hidedotfiles</span><span class="o">=</span><span class="nx">dotGitOnly</span>                   <span class="o">|</span>
-</code></pre></div>
-
-
-<p>The above configuration values can be individually read by using specific option as shown below.</p>
-<div class="highlight"><pre><span></span><code><span class="err">    K:\&gt;git config --global -l</span>
-<span class="err">    user.name=Abdul Sayyed</span>
-<span class="err">    user.email=s.a.ghafoor@outlook.com</span>
-<span class="err">    filter.lfs.clean=git-lfs clean %f</span>
-<span class="err">    filter.lfs.smudge=git-lfs smudge %f</span>
-<span class="err">    filter.lfs.required=true</span>
-</code></pre></div>
-
-
-<p>To see what values are set in local repository you have to be in a <strong>git</strong> repository otherwise it can not read any file as shown below.</p>
-<div class="highlight"><pre><span></span><code><span class="err">    K:\&gt;git config --local -l</span>
-<span class="err">    fatal: unable to read config file &#39;.git/config&#39;: No such file or directory</span>
-</code></pre></div>
-
-
-<p>The <code>--local</code> option is used for any local git repository file which is created when git is initialized locally as shown below.</p>
-<div class="highlight"><pre><span></span><code><span class="c">K:\projects\c-dir-record&gt;git config --local -l</span>
-<span class="err">core.repositoryformatversion=0</span>
-<span class="err">core.filemode=false</span>
-<span class="err">core.bare=false</span>
-<span class="err">core.logallrefupdates=true</span>
-<span class="err">core.symlinks=false</span>
-<span class="err">core.ignorecase=true</span>
-<span class="err">core.hidedotfiles=dotGitOnly</span>
-</code></pre></div>
-
-
-<h3>Writing to <strong>.gitconfig</strong> file</h3>
-<p>When it comes to writing the new values to the config file by default it is written in reverse order i.e., it is written to the most specific repository which is local repository config file. If you need to write to global config file or system config file then the use of <code>--global</code> or <code>--system</code> flag is necessary. Below we will be writing to the global config file.</p>
-<h4>Setting an editor globally with <strong>.gitconfig</strong></h4>
-<p>By default <strong>git</strong> uses <strong>vim</strong> editor  to change the default editor add the details of your favourite editor in <strong>.gitconfig</strong> file. Following code will set sublime  globally as a default editor.</p>
-<div class="highlight"><pre><span></span><code><span class="err">    K:\&gt;git config --global core.editor &quot;&#39;C:/Program Files/Sublime Text 3/sublime_text.exe&#39; -w&quot;</span>
-<span class="err">    K:\&gt;git config --global core.editor     &lt;-------- query the setting</span>
-<span class="err">    &#39;C:/Program Files/Sublime Text 3/sublime_text.exe&#39; -w</span>
-</code></pre></div>
-
-
-<h4>Setting a different editor locally with <strong>.gitconfig</strong></h4>
-<p>If for some reason you need to use a different editor for any particular project you are working on then set its detail in a local <strong>config</strong> file which is kept under the local repository <strong>.git/.config</strong>. Following example will set a notepad++ editor to be used locally. </p>
-<div class="highlight"><pre><span></span><code><span class="c">K:\projects\c-dir-record&gt;git config --local --add core.editor &quot;&#39;C:\Program Files (x86)\Notepad++\notepad++.exe&#39;&quot;</span>
-</code></pre></div>
-
-
-<p>Once it is set a user can invoke this editor using <code>&gt;git config -e</code> this will invoke a locally set editor instead of globally set editor</p>
-<p>To add any user specfic variable use <code>&gt;git config --global --add &lt; key &gt; &lt;value&gt;</code> pair as shown below.</p>
-<div class="highlight"><pre><span></span><code><span class="err">    K:\&gt;git config --global --add user.dob &quot;1978/03/02&quot;</span>
-</code></pre></div>
-
-
-<p>To change the above value use <code>--replace-all</code></p>
-<div class="highlight"><pre><span></span><code><span class="err">    K:\projects\c-dir-record&gt;git config --global --replace-all user.dob &quot;1999/01/11&quot;</span>
-</code></pre></div>
-
-
-<p>Similarly to delete the entry use <code>--unset-all</code> option.</p>
-<div class="highlight"><pre><span></span><code><span class="err">    K:\projects\c-dir-record&gt;git config --global --unset-all user.dob &quot;1999/01/11&quot;</span>
-</code></pre></div>
-
-
-<h4>Changing Color Setting for local repository</h4>
-<p>Though these days there are number of desktop programs which help you perform day to day jobs with git and provides a better graphical user interface with color coded result yet the option to change some  settings are allowed from <strong>git</strong>. You can either add the values manually in <strong>.git/.config</strong> files or add the values into this file by using option provided by config file from command prompt.Following code will add some values to local config fle:</p>
-<ul>
-<li>Open local repository config file using <code>&gt;git config --local -e</code></li>
-</ul>
-<h4>Where are they saved?</h4>
-<p>One of the file named <code>gitconfig</code> is saved under <code>C:/User/UserName/</code> where it can be modified directly.</p>
-<p><a href="#" title="@Change this picture ![Configuring-git](/images/git/installing-gitclient-01.png)">//</a>: # ( above - t </p>
-<h3>What is the line ending</h3>
-<p>There is one important thing to note when working with windowed environment and this is the way windows handle line endings of any text file. In order to understand the problem one must understand that every time   "Enter" Key is hit  the system adds an invisible line-ending character to mark that this an "Enter Key" a line ending key and it is not a part of the text being written. This "Enter " key is also known as carriage return "CR" Unix and its variants systems including OS X use <code>LF</code> character while Windows uses <code>CRLF</code> to mark end of line. This end of line invisible character is also stored when every time  a file is stored along with the contents of the file and read back when reading the file.</p>
-<p>If the concerned code was not shared there was nothing to worry about but the whole existence of <strong>git</strong> is to share code regardless of what system being used. <strong>git</strong> has chosen to use the <code>LF</code> character over <code>CRLF</code> probably because of its author's background. So when you <code>commit</code> your files basically you are writing something to the object database which is itself a file stored in the <strong>.git</strong> local repository. Thus every commit involves changing <code>CRLF</code> to <code>LF</code> if you are working in windows environment. Similarly if you are reading it back i.e., when you <code>checkout</code> or <code>clone</code> a git repository in windows environment the conversion from <code>Lf</code> to <code>CRLF</code> takes place again. </p>
-<p>To make sure the above process happens smoothly <strong>git</strong> adds a line in your system config file <code>core.autocrlf = true</code> Which ensures that the writing to and reading from database file operation carried out as intended. This value can be checked by running <code>&gt;git config -l</code> as done in previous section. If you are working in Unix environment and working locally without sharing your code the value of this variable most probably be set to false <code>core.autocrlf = false</code> . If this value is set to input as <code>core.autocrlf=input</code> means that conversion from <code>CRLF</code> to <code>LF</code> takes place only when writing to  object database but not the other way round. If you noticed when installing the <strong>git</strong> you were provided the choice about the line ending if you didn't understand what was all about make sure you understand it now. Follwoing option were given to you  and according to you choice values were added to the config file.</p>
-<p><img alt="installing-windows" src="/images/git/installing-windows-04.png"></p>
-<p>If you had noticed previously,  the out put of <code>&gt;git config -l</code> command,  you must have  seen  that the system setting has already this entry of <code>cor.autocrlf=true</code>  set to true which should be the case in Windows environment and obviously this setting should be in <strong>git</strong> system configuration file not in global or local config file.</p>
-<p>Though the above discussion of line ending and having autocrlf set to true sounds safe but is regarded the old way. From the <strong>git</strong> version 1.7.2 and above <strong>git</strong> expects you to define the details of your files  and how these files should be treated whether a conversion is required or not and if it required what is the line ending character and not only this <strong>git</strong> also gives you option to define explicitly which files are to be treated as a test file and whether <strong>git</strong> should perform any checking operation or not.</p>
-<p>This is done by providing <code>text</code> attribute to the files which you intend to tell <strong>git</strong> to treat as a text file by mentioning it in a file named <code>.gitattribut</code>that you keep it with your repository. Here is an example of <code>.gitattribute</code> file. </p>
-<div class="highlight"><pre><span></span><code>    <span class="o">#</span> <span class="k">Default</span> <span class="n">behaviour</span>
-    <span class="o">*</span> <span class="nb">text</span>      <span class="n">auto</span>
-
-    <span class="o">#</span> <span class="n">Following</span> <span class="n">files</span> <span class="k">are</span> <span class="nb">text</span> <span class="n">files</span> 
-    <span class="o">*</span><span class="p">.</span><span class="n">css</span>       <span class="nb">text</span>
-    <span class="o">*</span><span class="p">.</span><span class="n">md</span>        <span class="nb">text</span>
-
-    <span class="o">#</span> <span class="n">Following</span> <span class="n">files</span> <span class="k">are</span> <span class="k">not</span> <span class="nb">text</span> <span class="n">files</span>    
-    <span class="o">*</span><span class="p">.</span><span class="n">png</span>       <span class="nb">binary</span>
-    <span class="o">*</span>
-</code></pre></div>
-
-
-<p>What exactly you are telling <strong>git</strong> is that all files defined as text files should be normalized  without <strong>git</strong> checking it. A conversion of <code>CRLF</code> to <code>LF</code> must take place.</p>
-<p>To understand why it was done is to understand that not all the the time a text file is written to object database. There are number of files which differs from text files so it seems an intelligent choice to put this responsibility to the person who is to commit the files.</p>
-<h1>Start Using git remotely</h1>
-<p>The purpose of installing <strong>git</strong> was to make sure that the project  files or files in the project folder ,you are working on, remains intact with version system and if later on you decide to share them on remote repository so other can collaborate smoothly.In next chapter we will learn how to set a repository for the project of our interest.Be clearly sure that so far only a local repository software <strong>git</strong> has been installed and configured for a one person to use, nothing else has been done.</p>
-<h2>What is GitHub</h2>
-<p>GitHub is a remote website, that you can use to store your repositories so that they can be shared and others can contribute to your work. So can you by finding out any project of your interest and collaborate.</p>
-<h2>How to interact with GitHub account</h2>
-<p>The whole idea of using git is not only to use a source version control system but also to share your work with other people what is known as collaboration.The very first step you need to do is to go to <a href="https://github.com">github</a> and create your account. Once your <em>github</em> account is ready on remote sever. The second step is to make a link between <em>git</em> on your computer and <em>github</em> on your remote server what is known as <strong>Authenticating with GitHub from Git</strong>. And to do so you may download a program called <a href="https://desktop.github.com/">GitHub Desktop Client</a> . As the name suggest it sits on your computer and interacts with the remote server providing you a UI ( user interface ) which lets you do all the related works you might want to do . The same process of interacting to the remote server can be done using a command prompt or any other utility program too.</p>
-<h3>Installing GitHub Desktop Client</h3>
-<p>Download this program  <a href="https://desktop.github.com/">GitHub Desktop Client</a> from the GitHub site and run it . When run, it will ask you to provide the user name or the email address of your GitHub account as shown below, fill it up with the right information. When <em>git</em> account from your computer gets linked with <em>github</em> account on remote server. You can perform all the task which you many do from the command prompt.  This client application  will further ask you to select any repository from your computer to be uploaded to your github account. You can skip this step if you want as this is done in next chapter.  </p>
-<h3><strong>git help</strong></h3>
-<p>Before finishing the chapter we will look into <strong>git</strong>'s available help options.<strong>git</strong> provides extensive help through its manual pages as well as short format on command prompt. The rule of thumb is that if you type any  valid <strong>git</strong> command without its expected flag <strong>git</strong> will output the command specific short help with some suggestion as we saw earlier typing only <code>&gt;git</code>.</p>
-<p>All <strong>git</strong> commands are also known as <strong>git</strong> tools since they provide some services and perform some actions. Remember if you type a command which does not take any argument to run followed by the <strong>git</strong> then this command will run. Thus a rule of thumb is to use this syntax <code>&gt;git &lt; command &gt; --help</code>. This syntax will always open manual page related to this tool/command in an external browser.</p>
-<p>To use the  git commands correctly , understanding of a  syntax is must a common usage is <code>&gt;git &lt;command&gt; [&lt;args&gt;]</code> .</p>
-<div class="highlight"><pre><span></span><code>            command
-                |   argument
-                |   |
-                V   V
-        &gt;git  init  .       &lt;------- Initializes the current direcotry
-                                          as a repository
-</code></pre></div>
-
-
-<p>Let's look at the help command itself first provided by <strong>git</strong> using the above rule. To find out what help options are available for <strong>help</strong> tool use <code>&gt;git help --help</code> and a manual page will be open to see the help in detail.
-in short format just use the above rule and type <code>&gt;git</code>. The output will give commonly used commands and at the end it suggests to use <code>&gt;git help -a</code> and <code>git-help-g</code> it also suggests to see <code>git help &lt; command &gt;</code> or <code>&gt;git help &lt; concept &gt;</code> to read about any specific subcommand or concept.</p>
-<ul>
-<li>First use <code>&gt;git help -a</code> and look at the result shown. It gives you the list of git commands that are used but without any explanation of how to use them.</li>
-<li>Secondly use <code>&gt;git help -g</code> and look at the result shown. It gives you list of common <strong>git</strong> guides available on your platform . Following is the output of this command.</li>
-</ul>
-<div class="highlight"><pre><span></span><code>            K:\projects\c-dir-record&gt;git help -g
-            The common Git guides are:
-            attributes   Defining attributes per path
-            everyday     Everyday Git With 20 Commands Or So
-            glossary     A Git glossary
-            ignore       Specifies intentionally untracked files to ignore
-            modules      Defining submodule properties
-            revisions    Specifying revisions and ranges for Git
-            tutorial     A tutorial introduction to Git (for version 1.5.1 or newer)
-            workflows    An overview of recommended workflows with Git
-</code></pre></div>
-
-
-<p>Let's look at the guides suggested by the above result using <code>&gt;git help &lt; guide name &gt;</code> as <code>&gt;git help tutorial</code> or <code>&gt;git help glossary</code> and so on. By typing these commands <strong>git</strong> opens installed default browser to show this guide. These guides provide tremendous amount of  knowledge for someone who is interested in learning more. Coming back to our help commands topic to use any specific tool of git using the same rule just type the command followed by the <strong>git</strong>. For example to see how to use <code>init</code> command type <code>&gt;git help init</code> and it should open its associated manual page with the detail about this command and its usage. Similarly type <code>&gt;git help config</code> or <code>&gt;git config --help</code> This should open a manual page of help in your default browser about using config command.Have a look if it make any sense to you. Do not worry, every thing takes time specially if you have never worked on Unix system.</p>
-<!-- this chapter ,try the following command to open help in the html format as you may have noticed in our config setting it says `help.format = html` Type either of these and you will get the same result. -->
-
-<p>As we have tried the very first command option listed you can go ahead and try the second one <code>&gt;git --help</code> and you get the same listing as you did get it without  <code>--help</code>.So make a note that either <code>&gt;git</code> , <code>&gt;git --help</code> or <code>&gt;git help</code> will give output the same result. This rules applies to most of the git commands.To see a clear listing of all available help type<code>&gt;git --help -a | more</code> and you get all the available command through pipe <code>|</code> symbols so you can read them easily with the help of a space bar to scroll down. To see help in your browser use <code>&gt;git help man</code> or <code>&gt;git man --help</code> . To see what guides are available use <code>&gt;git help -g</code></p>
-<h2>Installing <code>git</code> on Linux</h2>
-<p><code>Git</code> is developed in linux and very easy to install but different from windows installation as they both system differs greatly. To install <code>git</code> on linux just use <code>apt-get</code> package or any other package installer according to your distro.</p>
-<div class="highlight"><pre><span></span><code>$ apt-get update or sudo apt-get update or sudo apt-get install git-core
-// you need the following line to install git, you can <span class="k">do</span> whatever way you like
-$ apt-get install git-core 
-</code></pre></div>
-
-
-<p>git will be installed hopefully in <code>/usr/bin/</code> directory, if needs to know where it is installed use <code>which /usr/bin</code>. Use <code>git version</code> command to see the installed git version.</p>
-<h3>Configuring git in linux</h3>
-<p>Unlike windows linux does not require many varaibles to be set up, if you try to take the listing of git, you might end up with having no listing at all. As it is not needed by default. The only entries that are present and expected to be changed by you is the user name and email address which pops up time and time again when working so it is best to have those values stored in <code>.gitconfig</code> file.</p>
-<div class="highlight"><pre><span></span><code>$ git config --list
-$ 
-$ git config --global --list
-$
-$ git config --local --list
-</code></pre></div>
-
-
-<p>Nothing is set so nothin is shown, go to your user home directory.<code>cd ~/</code> and look for the entry <code>.gitignore</code> and open it in the editor or use <code>cat .gitigonre</code> to see the contents. Change the values whatever you want.</p>
-<div class="highlight"><pre><span></span><code><span class="n">sayyed</span><span class="nv">@AI</span><span class="err">:</span><span class="o">~|</span><span class="err">⇒</span><span class="w">  </span><span class="n">cat</span><span class="w"> </span><span class="p">.</span><span class="n">gitconfig</span><span class="w"></span>
-<span class="err">#</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">Git</span><span class="err">&#39;</span><span class="n">s</span><span class="w"> </span><span class="n">per</span><span class="o">-</span><span class="k">user</span><span class="w"> </span><span class="n">configuration</span><span class="w"> </span><span class="k">file</span><span class="p">.</span><span class="w"></span>
-<span class="o">[</span><span class="n">user</span><span class="o">]</span><span class="w"></span>
-<span class="err">#</span><span class="w"> </span><span class="n">Please</span><span class="w"> </span><span class="n">adapt</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">uncomment</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">following</span><span class="w"> </span><span class="nl">lines</span><span class="p">:</span><span class="w"></span>
-<span class="err">#</span><span class="w">       </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Abdul</span><span class="w"> </span><span class="n">Sayyed</span><span class="w"></span>
-<span class="err">#</span><span class="w">       </span><span class="n">email</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sayyed</span><span class="nv">@localhost</span><span class="p">.</span><span class="n">localdomain</span><span class="w"></span>
-</code></pre></div>
-
-
-<p>This is the default values and filled from the system setting when git was installed you can change to whatever you wish.</p>
-<blockquote>
-<p>Note: you will still not find any listing for the --global or --system flag.</p>
-</blockquote>
-<h3>Summary</h3>
-<p>What we have learned so far:</p>
-<ol>
-<li>How to install <strong>git</strong></li>
-<li>How to check the installation if it is working or not</li>
-<li>How to configure git to set your identity</li>
-<li>Which .gitconfig file? { local, global or system}</li>
-<li>Writing to gitconfig file</li>
-<li>Setting different editors to use  git locally and globally</li>
-<li>What is the line ending and why it is necessary to understand it</li>
-<li>what is GitHub, installing Github client</li>
-<li>How to use git help locally</li>
-</ol>
-<!-- #Quiz#
-Here you are given simple scenario choose the best answer and see your progress
-
-### To Do
-
-1.  What is GitHub
-2.  How to clone git from outside resources
-2.  How to remove external .git using `rm -rf <package name>/.git
-3.  How to add files or folders to be ignored by git.
-4.   -->                </article>
-            </aside><!-- /#featured -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
 
 </body>
 </html>
